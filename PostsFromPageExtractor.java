@@ -16,11 +16,11 @@ public static void main(String[] args) throws FacebookException {
  // Generate facebook instance.
 Facebook facebook = new FacebookFactory().getInstance();
 // Use default values for oauth app id.
-facebook.setOAuthAppId("451909798958467", "103b804b6402526e5655dfa2509514fb");
+facebook.setOAuthAppId("4519097989xxxxx", "103b804b6402526e5655dfa2509xxxxx");
 // Get an access token from: 
 // https://developers.facebook.com/tools/explorer
 // Copy and paste it below.
-String accessTokenString = "EAAGbAnMJlYMBAAV0JfhlwWyjDbX3mSbAcLZAb3aJobRHQ0q9csMRiOZAR6oGotAji2ZBqxdK1ltzXnaZAXdxeHW2T0j2DmrsjwZCgQy4ZBSYDWcxA1dULkSRgbyAQutWNdP5rf5RFRY87RGG9AIYOVuNXUUJi8P3yLVJFCGLK2jxzN3kwQHWh4KNA4Nl3ZAO4oETZBZAH6avLqQZDZD";
+String accessTokenString = "xxxxxxxxxxxxAAV0JfhlwWyjDbX3mSbAcLZAb3aJobRHQ0q9csMRiOZAR6oGotAji2ZBqxdK1ltzXnaZAXdxeHW2T0j2DmrsjwZCgQy4ZBSYDWcxA1dULkSRgbyAQutWNdP5rf5RFRY87RGG9AIYOVuNXUUJi8P3yLVJFCGLK2jxzN3kwQHWh4KNA4Nl3ZAO4oETZBZAH6av";
 AccessToken at = new AccessToken(accessTokenString);
 // Set access token.
 facebook.setOAuthAccessToken(at);
@@ -32,7 +32,7 @@ facebook.setOAuthAccessToken(at);
 
  // Set limit to 25 feeds.
 
- ResponseList<Post> feeds = facebook.getFeed("2348230612089925",
+ ResponseList<Post> feeds = facebook.getFeed("xxxxx30612089925",
 new Reading().limit(25));
 
  // For all 25 feeds...
